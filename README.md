@@ -3,7 +3,6 @@
 ##About
 web site vollov.ca
 
-## Install as a deamon
-1. install upstart by #apt-get install upstart
-2. copy vollov.conf to /etc/init/
-3. start vollov
+## versions
+1.0 - [anguarjs] static web page with nodejs and angularjs
+2.0 - [java] Java implementation with spring, hibernate and twitter-bootstrap
