@@ -27,14 +27,23 @@ body {
 }
 
 /*Header*/
+@nav_and_logo_height: 150px;
+@header-width: 1008px;
+@contact-height: 200px;
+
 .site-header {
-	width: 1008px;	
-	height: 360px;
+	width: @header-width;	
+	height: @nav_and_logo_height + @contact-height;
+}
+
+.blog-header {
+	width: @header-width;	
+	height: @nav_and_logo_height;
 }
 
 .logo {
 	height: 90px;
-	width: 1008px;
+	width: @header-width - 52px;
 	margin-left: 52px;
 	background-image:	url(../images/logo.png);
 	background-repeat: no-repeat;
@@ -43,7 +52,6 @@ body {
 /* navigation */
 .navigation {
 	height: 30px;
-	width: 1020px;
 	margin-left: 36px;
 	padding-top: 30px;
 	font-size: 13px;
