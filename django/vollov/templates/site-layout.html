@@ -17,60 +17,70 @@
 	<![endif]-->
 </head>
 <body>
-	<div class="site-wrapper">
-			<div class="site-header">
-				<div class="navigation">
-					<ul>
-						<li><a href="/">HOME</a></li>
-						<li><a href="/page/web-design">WEB DESIGN</a></li>
-						<li><a href="/page/it-consulting">IT CONSULTING</a></li>
-						<li><a href="/page/portfolio">PORTFOLIO</a></li>
-						<li><a href="/blog">BLOG</a></li>
-					</ul>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Super Rent</span> <span class="icon-bar"></span>
+					<span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<strong class="navbar-brand"></strong>
+			</div>
+
+			<div id="navbar" class="navbar-collapse collapse">
+
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="/">HOME</a></li>
+					<li><a href="/page/web-design">WEB DESIGN</a></li>
+					<li><a href="/page/it-consulting">IT CONSULTING</a></li>
+					<li><a href="/page/portfolio">PORTFOLIO</a></li>
+					<li><a href="/page/blog">BLOG</a></li>
+				</ul>
+
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" placeholder="Email" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-success">Sign in</button>
+				</form>
+			</div>
+			<!--/.navbar-collapse -->
+		</div>
+	</nav>
+
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="{% static "images/logo.png" %}" class="img-responsive" alt="ISDA Logo" />
 				</div>
-				<div class="logo">
-					<div class="subtitle">Porfessional web site design</div>	
-					<div class="subtitle-blue">and Software consulting </div>			
-				</div>
-				<div class="contact">
-					<div class="column">
-						<div class="column-text">
-							<h2>Kitchener:</h2>
-							<p>48 Steepleridge ST, Kitchener, Ontario N2p 2W3</p>
-							<ul>
-								<li>Tel: 519-616-3168</li>
-								<li>Email: vollov.ca@gmail.com</li>
-							</ul>
-						</div>
-					</div>	
-					<div class="column">
-						<div class="column-text">
-							<h2>London:</h2>
-							<p>Room 311, 756 Kipps Lane, London, Ontario</p>
-							<ul>
-								<li>Tel:  519-932-0586</li>
-								<li>Email: vollov.ca@gmail.com</li>
-							</ul>
-						</div>
-					</div>			
+				<div class="col-md-4">
+					<div class="subtitle">Porfessional web site design</div>
+					<div class="subtitle-blue">and Software consulting</div>
 				</div>
 			</div>
-			<div class="content">
-				{% block content%}
+		</div>
+	</div>
+
+	<div class="container">
+		{% block content%}
 		
-				{% endblock %}
-			</div>
-			<!-- end of content -->
-			<div class="footer">
-				<div class="legal">Copyright &copy; 2009-2014 vollov.ca All Rights Reserved. Designed by: vollov.ca</div>
-				<div class="links">
-					<ul>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Terms of Use</a></li>
-					</ul>
-				</div>
-			</div>
-	</div><!--end of wrapper -->
+		{% endblock %}
+	
+	<hr class="featurette-divider">
+	
+	  <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Copyright &copy; 2009-2014 vollov.ca All Rights Reserved. Designed by: vollov.ca &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </div><!-- /container -->
+
 	<script src="{% static "lib/jquery/jquery.js" %}"></script>
 	<script src="{% static "lib/bootstrap/bootstrap.js" %}"></script>
 </body>

@@ -1,6 +1,7 @@
 http://wrapbootstrap.com/preview/WB0NPLR53
 
 http://www.sitepoint.com/6-chrome-extensions-designers/
+http://pixabay.com/
 
 $ npm install -g less
 $ lessc styles.less > styles.css
