@@ -8,5 +8,7 @@ urlpatterns = patterns('',
     
     url(r'^$', 'vollov.views.home', name='home'),
     url(r'^page/', include('page.urls')),
+    url(r'^blog/', include('blog.urls')),
     url(r'^admin/', include(admin.site.urls)),
+
 )
