@@ -18,3 +18,5 @@ You can use the –env option to set the path to load the settings. In case you 
 manage.py collectstatic
 $ gunicorn --env DJANGO_SETTINGS_MODULE=vollov.settings vollov.wsgi --daemon -b :7005
 
+mysql -u username -p -h localhost DATA-BASE-NAME < data.sql
+mysqldump vollov -uroot -p > vollov.sql
