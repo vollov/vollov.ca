@@ -1,5 +1,5 @@
 """
-WSGI config for mysite project.
+WSGI config for vollov project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -8,7 +8,7 @@ https://docs.djangoproject.com/en/1.7/howto/deployment/wsgi/
 """
 
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "volov.settings_prod")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "vollov.settings_prod")
 
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
