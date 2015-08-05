@@ -88,13 +88,16 @@ USE_TZ = True
 #STATIC_ROOT = '/home/dustin/contents'
 
 STATIC_URL = '/static/'
+STATIC_ROOT= '/opt/www/vollov/static'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/opt/www/vollov/media'
+
 LOG_DIR = os.path.join(BASE_DIR, 'logs')
 LOG_PATH = os.path.join(LOG_DIR, 'debug.log')
-
 
 LOGGING = {
     'version': 1,
