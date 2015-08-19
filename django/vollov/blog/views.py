@@ -5,7 +5,7 @@ def blogs(request):
     return render_to_response('blogs.html', {
         'page_title': 'blog',
         'categories': Category.objects.all(),
-        'posts': Blog.objects.all()[:5]
+        'posts': Blog.objects.all()#[:5]
     })
 
 def view_post(request, slug):   
@@ -19,5 +19,5 @@ def view_category(request, slug):
     return render_to_response('view_category.html', {
         'page_title': 'blog-category',
         'category': category,
-        'posts': Blog.objects.filter(category=category)[:5]
+        'posts': Blog.objects.filter(category=category)#[:5]
     })
